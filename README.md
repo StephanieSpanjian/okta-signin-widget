@@ -317,6 +317,10 @@ signIn.off('pageRendered');
 signIn.off('pageRendered', onPageRendered);
 ```
 
+## authClient
+
+Returns the underlying `@okta/okta-auth-js` object used by the widget. See [AuthJS](https://github.com/okta/okta-auth-js#api) for a list of available methods.
+
 ## session.get(callback)
 
 Gets the active session, or returns `{status:inactive}` on error or no active session.
