@@ -141,7 +141,7 @@ var OktaSignIn = (function () {
     return {
       renderEl: render,
       signOut: closeSession,
-      authClient: getAuthClient,
+      authClient: getAuthClient(),
       idToken: {
         refresh: refreshIdToken
       },

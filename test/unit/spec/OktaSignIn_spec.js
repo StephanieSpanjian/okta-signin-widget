@@ -20,7 +20,7 @@ function (Widget, Expect) {
       });
       it('has an authClient method', function () {
         expect(signIn.authClient).toBeDefined();
-        expect(signIn.authClient().options.url).toEqual(url);
+        expect(signIn.authClient.options.url).toEqual(url);
       });
       it('has a tokenManager method', function () {
         expect(signIn.tokenManager).toBeDefined();
